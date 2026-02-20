@@ -1,16 +1,16 @@
 body
 {
-    background-color: wheat;
+    background-color: rgb(176, 175, 173);
 }
 
 #grid
 {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, minmax(50px,auto));
+    grid-template-rows: repeat(8, minmax(150px, auto));
     grid-gap: 5px;
 }
 
-/*header*/
+/*header
 .header
 {
     grid-column: 1/7;
@@ -19,20 +19,29 @@ body
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(1,50px);
-}
+}*/
 
 .name
 {
-    color: lightcoral;
-    grid-column: 1/2;
-    align-self: center;
+    color: rgb(0, 0, 0);
+    grid-column: 1/7;
+    grid-template-rows: 2/3;
+    text-align: center;
     padding: 0 0 0 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-style: bold;
+
+    margin: 70px;
+    
+
 }
 
-.navigation
+/*.navigation
 {
+    grid-row: 1/2;
     grid-column: 4/7;
-}
+}*/
 
 ul li
 {
@@ -51,16 +60,29 @@ ul li a
     background-color: black;
 }
 
+.button
+{
+    text-decoration: none;
+    color: black;
+    margin: 200px 20px 20px 20px;
+    padding: 20px;
+
+    border: solid orange 2px;
+    background-color: orange;
+    border-radius: 50px;
+}
+
 /*main*/
 .main
 {
     grid-column: 1/7;
-    grid-row: 2/6;
+    grid-row: 3/6;
 }
 
 /*footer*/
 .footer
 {
+    margin: 70px;
     grid-column: 1/7;
     grid-row: 6/8;
 }
